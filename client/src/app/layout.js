@@ -4,9 +4,9 @@
 import { useRef } from "react";
 import { Provider } from "react-redux";
 import { makeStore } from "./lib/store";
-import { ThemeProvider } from "@material-tailwind/react";
 
 import "./globals.css";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export default function Layout({ children }) {
   const storeRef = useRef();
@@ -16,11 +16,11 @@ export default function Layout({ children }) {
 
   return (
     <Provider store={storeRef.current}>
-      <ThemeProvider>
-        <html lang="en">
-          <body>{children}</body>
-        </html>
-      </ThemeProvider>
+      <html lang="en">
+        <body>
+          <ChakraProvider resetCSS>{children}</ChakraProvider>
+        </body>
+      </html>
     </Provider>
   );
 }

@@ -3,7 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --background: #ffffff;
   /* --foreground: #171717; */
@@ -14,3 +18,57 @@ body {
   margin: 0;
 }
 
+/* .custom-input {
+  margin-top: 50px;
+} */
+
+.custom-input input {
+  width: 100%;
+  height: 70px; /* Input yüksekliğini ayarlıyoruz */
+
+  background-color: transparent;
+  color: #607d8b; /* Blue-gray rengini kullanıyoruz */
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 16px 12px; /* Padding değerlerini input yüksekliğine uygun şekilde ayarlıyoruz */
+  border: 1px solid #b0bec5; /* Placeholder varken sınır rengi */
+  border-radius: 7px;
+  transition: all 0.2s ease-in; /* Yumuşak geçişler */
+}
+
+.custom-input input:focus {
+  border-color: #2196f3; /* Focus durumunda mavi sınır */
+  border-width: 2px; /* Focus durumunda sınır genişliği artıyor */
+  border-top: none;
+}
+
+.custom-input label {
+  position: absolute;
+  top: -20px; /* Label'ın yukarıda konumlanması */
+  left: 0;
+  font-size: 11px; /* Küçük yazı boyutu */
+  color: #90a4ae; /* Label rengi */
+  transition: all 0.3s ease; /* Yumuşak geçiş */
+}
+
+.custom-input input:placeholder-shown + label {
+  top: 10px; /* Placeholder aktifken label'ın input ortasında durması */
+  font-size: 14px; /* Placeholder aktifken yazı boyutu daha büyük */
+}
+
+.custom-input input:focus + label {
+  top: -8px; /* Focus durumunda label'ın yukarı çıkması */
+  font-size: 11px; /* Focus durumunda yazı boyutunun küçülmesi */
+  color: #2196f3; /* Focus durumunda label'ın rengi mavi */
+}
+
+.custom-button {
+  color: white;
+  /* padding: 26px 16px; */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  transform: scale(1.1);
+}

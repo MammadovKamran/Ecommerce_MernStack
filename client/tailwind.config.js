@@ -15,8 +15,8 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        "login-image":
-          "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg')",
+        "login-image": "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg')",
+        "signup-image": "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-10.jpg')",
       },
       colors: {
         background: "var(--background)",
