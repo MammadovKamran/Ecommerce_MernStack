@@ -16,21 +16,42 @@ export const PasswordField = forwardRef((props, ref) => {
       });
     }
   };
+
   return (
-    <FormControl>
-      <FormLabel htmlFor="password">Password</FormLabel>
+    <FormControl className="relative">
+      <FormLabel
+        className=" w-20 h-5 bg-white text-gray-600 	 absolute left-7 top-[-13px] z-10 m-0 color"
+        textAlign="center"
+        fontWeight="normal"
+        htmlFor="password">
+        Password
+      </FormLabel>
       <InputGroup>
-        <InputRightElement>
+        <InputRightElement h="100%" alignItems="center">
           <IconButton
+            size="lg"
             variant="text"
             aria-label={isOpen ? "Mask password" : "Reveal password"}
-            icon={isOpen ? <HiEyeOff /> : <HiEye />}
+            icon={isOpen ? <HiEyeOff size={18} /> : <HiEye size={18} />}
             onClick={onClickReveal}
+            h="auto" // Auto height to adjust according to the content
+            minW="auto" // Set min width to auto to avoid oversized button
           />
         </InputRightElement>
-        <Input id="password" ref={mergeRef} name="password" type={isOpen ? "text" : "password"} autoComplete="current-password" required {...props} />
+        <Input
+          id="password"
+          h="60px"
+          ref={mergeRef}
+          name="password"
+          type={isOpen ? "text" : "password"}
+          autoComplete="current-password"
+          required
+          placeholder="***************"
+          {...props}
+        />
       </InputGroup>
     </FormControl>
   );
 });
+
 PasswordField.displayName = "PasswordField";
