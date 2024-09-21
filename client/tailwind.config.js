@@ -15,8 +15,10 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        "login-image": "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg')",
-        "signup-image": "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-10.jpg')",
+        "login-image":
+          "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg')",
+        "signup-image":
+          "url('https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-10.jpg')",
       },
       colors: {
         background: "var(--background)",
@@ -24,17 +26,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 });
-
-// module.exports = {
-//   content: [
-//     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-
-//   },
-//   plugins: [],
-// };

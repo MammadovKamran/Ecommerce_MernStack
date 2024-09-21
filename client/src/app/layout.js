@@ -7,6 +7,7 @@ import { makeStore } from "./lib/store";
 
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import Header from "./components/header/Header";
 
 export default function Layout({ children }) {
   const storeRef = useRef();
@@ -18,6 +19,7 @@ export default function Layout({ children }) {
     <Provider store={storeRef.current}>
       <html lang="en">
         <body>
+          <Header/>
           <ChakraProvider resetCSS>{children}</ChakraProvider>
         </body>
       </html>
