@@ -19,7 +19,7 @@ export default function Layout({ children }) {
     <Provider store={storeRef.current}>
       <html lang="en">
         <body>
-          <Header/>
+          <Header />
           <ChakraProvider resetCSS>{children}</ChakraProvider>
         </body>
       </html>
