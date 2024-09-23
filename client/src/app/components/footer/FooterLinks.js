@@ -7,37 +7,41 @@ const FooterLinks = () => {
       {/* Support */}
       <div>
         <h4 className="font-semibold mb-4">Support</h4>
-        <p className="text-sm text-gray-600">
+        {/* <p className="text-sm text-gray-600">
           685 Market Street, Las Vegas, LA 95820, United States.
-        </p>
-        <p className="text-sm text-gray-600">example@domain.com</p>
+        </p> */}
+        <p className="text-sm text-gray-600">685 Market Street, <br/>
+                                Las Vegas, LA 95820, <br/>
+                                United States.
+                                </p>
+        <p className="text-sm text-gray-600 my-3">example@domain.com</p>
         <p className="text-sm text-gray-600">(+01) 850-315-5862</p>
       </div>
       {/* Account */}
       <div>
         <h4 className="font-semibold mb-4">Account</h4>
         <ul>
-          <li>
-            <a href="#" className="text-gray-600 hover:text-blue-500">
+          <li className="mb-2">
+            <a href="#" className="text-gray-600 hover:text-blue-500 ">
               My Account
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Login / Register
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Cart
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Wishlist
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Shop
             </a>
@@ -48,22 +52,22 @@ const FooterLinks = () => {
       <div>
         <h4 className="font-semibold mb-4">Quick Links</h4>
         <ul>
-          <li>
+          <li  className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Privacy Policy
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Terms of Use
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               FAQ
             </a>
           </li>
-          <li>
+          <li className="mb-2">
             <a href="#" className="text-gray-600 hover:text-blue-500">
               Contact
             </a>
@@ -72,7 +76,7 @@ const FooterLinks = () => {
       </div>
       {/* Download App */}
       <div>
-        <h4 className="font-semibold mb-4">Download App</h4>
+        <h3 className="font-semibold mb-4">Download App</h3>
         <p className="text-sm text-gray-600 mb-4">
           Save $3 with App & New User only
         </p>

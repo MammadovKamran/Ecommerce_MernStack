@@ -30,11 +30,11 @@ const ServiceInfoSection = () => {
       {services.map((service, index) => (
         <div
           key={index}
-          className="p-4  rounded-lg  flex justify-between items-center"
+          className="p-4  rounded-lg  flex justify-start md:justify-between items-center"
         >
           <img src={service.img} className="w-10" />
-          <div className="text-start">
-            <h3 className="font-semibold mb-2">{service.title}</h3>
+          <div className="text-start ml-4">
+            <h3 className="font-semibold mb-2 ">{service.title}</h3>
             <p className="text-sm text-gray-600">{service.description}</p>
           </div>
         </div>

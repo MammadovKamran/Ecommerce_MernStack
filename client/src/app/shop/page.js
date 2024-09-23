@@ -7,10 +7,12 @@ import Footer from "../components/footer/Footer";
 const page = () => {
   return (
     <>
-      <div className="flex flex-col">
-        <FilterShop />
-        <Card />
-        <Footer />
+      <div className="">
+        <div className="flex flex-col justify-center">
+          <FilterShop />
+          <Card />
+          <Footer />
+        </div>
       </div>
     </>
   );

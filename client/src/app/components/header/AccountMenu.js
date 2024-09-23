@@ -16,7 +16,7 @@ const AccountMenu = () => {
   ];
   return (
     <>
-      <div className="flex justify-around items-center max-w-7xl h-11 w-full mx-auto">
+      <div className="flex justify-around items-center  h-11 w-full mx-auto">
         <div className="flex justify-start w-1/2 ">
           <DropDowns items={dropdownItems} buttonText="English" />
           <DropDowns items={dropdownItems} buttonText="USD" />

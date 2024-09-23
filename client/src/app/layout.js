@@ -14,13 +14,17 @@ export default function Layout({ children }) {
   if (!storeRef.current) {
     storeRef.current = makeStore();
   }
-
+  // sm md lg xl 2xl
   return (
     <Provider store={storeRef.current}>
       <html lang="en">
         <body>
-          <Header />
-          <ChakraProvider resetCSS>{children}</ChakraProvider>
+          <div className="flex flex-col items-center">
+            <div className="2xl:w-[72%] xl:w-[88%] lg:w-[80%] sm:w-[75%] w-[90%]">
+              <Header />
+              <ChakraProvider resetCSS>{children}</ChakraProvider>
+            </div>
+          </div>
         </body>
       </html>
     </Provider>
