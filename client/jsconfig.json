@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
+    "target": "es6",                       // Hedef ECMAScript versiyonu
+    "module": "commonjs",                  // Modül sistemi
+    "baseUrl": "./",                       // Temel URL
     "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+      "@/*": ["./src/*"]                  // Alias ayarları
+    },
+    "strict": true,                        // Sıkı tip denetimi
+    "jsx": "preserve"                     // JSX dönüşüm ayarı
+  },
+  "include": ["src/**/*"]                 // Dahil edilecek dosya veya klasörler
 }

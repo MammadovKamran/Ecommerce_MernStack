@@ -20,7 +20,7 @@ export default function Layout({ children }) {
       <html lang="en">
         <body>
           <div className="flex flex-col items-center">
-            <div className="2xl:w-[72%] xl:w-[88%] lg:w-[80%] sm:w-[75%] w-[90%]">
+            <div className="2xl:w-[72%] xl:w-[88%] lg:w-[80%] sm:w-[90%] w-[90%]">
               <Header />
               <ChakraProvider resetCSS>{children}</ChakraProvider>
             </div>
