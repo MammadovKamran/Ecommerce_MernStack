@@ -103,7 +103,7 @@ export default function Card() {
                     </button>
                     <button className="text-sm text-white h-10 w-auto rounded-md p-2 m-2 bg-pink-600">Add To Cart</button>
                     <button onClick={onOpen}>
-                      <EyeIcon aria-hidden="true" className="h-10 w-10 rounded-md p-2 bg-white hover:bg-pink-600" />
+                      <EyeIcon   aria-hidden="true" className="h-10 w-10 rounded-md p-2 bg-white hover:bg-pink-600" />
                     </button>
                   </div>
                 </div>
